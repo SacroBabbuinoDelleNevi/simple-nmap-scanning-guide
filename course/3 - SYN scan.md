@@ -16,7 +16,7 @@ This is called a `SYN scan`, and it's the default scanning method of nmap, thoug
 
 | Response    | Meaning                                           |
 | ----------- | ------------------------------------------------- |
-| SYN+ACK     | Port is open and accepts connection. Good!        |
+| SYN+ACK     | Port is open and accepts connections. Good!       |
 | RST         | Port is closed or it doesn't accept connections   |
 | No response | Probably blocked by firewall, appears as filtered |
 
@@ -52,12 +52,12 @@ Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
 >[!Note]
 >If a scan takes long, you can verify its status by pressing spacebar in the terminal
 
-Sooooo....
-First lines are metadata for the scan itself, like the version of nmap, when it started, who the scan targeted. We can then see that nmap hides all the closed ports, displaying the reason it believes those ports are closed in parenthesis.
+Sooooo....  
+First lines are metadata for the scan itself, like the version of nmap, when it started, who the scan targeted. We can then see that nmap hides all the closed ports, displaying the reason it believes those ports are closed in parenthesis.  
 Then we see the list of all the ports that nmap believes open and the service associated with them. When talking about standard ports, the port number usually identifies the service, but checking never hurt anyone.
 
 ### Did we scan 65 535 ports in such a small amount of time?
-Well, no.
+Well, no.  
 Nmap has a list of the top 1000 ports, and it scans those by default. But we have some options:
 
 | Description         | Flag          |
@@ -66,9 +66,11 @@ Nmap has a list of the top 1000 ports, and it scans those by default. But we hav
 | Scans top 100 ports | -F            |
 | Scan custom ports   | -p\<number\>  |
 | Scan all 65 535     | -p-           |
-Don't be fooled by the words here: top N ports does **not** mean ports 0-N, but the most commonly N ports usually open instead.
+
+Don't be fooled by the wording here: top N ports does **not** mean ports 0-N, but the most commonly N ports usually open instead.
 
 ### You should almost always scan all the ports
 Even though it's pretty time consuming. Non-standard ports are usually where custom, developing or debugging services run. For example, a developer might have forgotten about a server open on port 8080 exposing an internal directory, or it might have much less strict security policies. What you can do is run a standard nmap scan, and then run the full one in the background. You will learn about [optimizing your scans]() in chapter [**TODO**]()
 
 ### Getting more details
+reason and stuff
