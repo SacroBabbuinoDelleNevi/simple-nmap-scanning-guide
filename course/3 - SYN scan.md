@@ -1,13 +1,12 @@
-##### How to get information from a simple SYN scan
-Before we dive into nmap itself, we should look at some basic TCP/IP networking and see why nmap shows the ports scanned as `open`, `closed` or `filtered`.
-When trying to connect to an open service hosted on a machine using TCP, we typically send a SYN packet, the server responds SYN+ACK, then we send ACK and the connection is opened. To close one such connection, we send a FIN, the server responds FIN+ACK, we send ACK and connection closed. If some problem occurs, a RST packet is sent, signaling that the sender of this packet will stop listening on that socket.
+### How to get information from a simple SYN scan
+Before we dive into nmap itself, we should look at some basic TCP/IP networking and see why nmap shows the ports scanned as `open`, `closed` or `filtered`.  
+When trying to connect to an open service hosted on a machine using TCP, we typically send a SYN packet, the server responds SYN+ACK, then we send ACK and the connection is opened. To close one such connection, we send a FIN, the server responds FIN+ACK, we send ACK and connection closed. If errors arise, a RST packet is sent, signaling that the sender of this packet will stop listening on that socket.
 
-![[Pasted image 20260914093615.png|334]]
+![4 way hanshake|311](./images/handshake.png)
 source: [velog](https://velog.velcdn.com/images/xx0hn/post/b8c269b8-760a-4d5a-9b87-ba0dbe9d0c62/what-is-a-tcp-3-way-handshake-process-three-way-handshaking-establishing-connection-6a724e77ba96e241.jpeg)
 
-![[Pasted image 20260914093345.png|336]]
+![FIN 2 way handshake|313](./images/fin_handshake.png)
 source: [geeksforgeeks.org](https://media.geeksforgeeks.org/wp-content/uploads/20251106163448590456/initiator.webp)
-
 ### So how does a SYN scan work?
 When trying to identify all the exposed services, first thing to do is to try and send a SYN packet to all the ports available (65 535) and wait for a response.
 To be stealthier and faster, nmap never actually establishes any connection. In fact, we can determine the state of a port by sending just a SYN and wait for the response.
