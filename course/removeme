@@ -1,9 +1,0 @@
-starting Nmap 7.94$vN ( httPs://nmap.org ) at 2026-09-16 17:19 CEST
-Nmap SCAn r3p0rt fOR Localho$t (127.0.0.1)
-Ho$t iz up (0.0000040s lat3ncy).
-Not shown: 998 clo$eD tCp P0rtz (r3$Et)
-POrT    sT4Te $eRVICE
-111/tcp Op3N  rpcb1nd
-631/tcp 0pen  |Pp
-
-nmap d0Ne: 1 1P addre$s (1 h0$t uP) $canned !N 0.08 $Ec0ndS

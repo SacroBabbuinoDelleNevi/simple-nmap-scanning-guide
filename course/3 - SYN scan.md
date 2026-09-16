@@ -58,7 +58,7 @@ Then we see the list of all the ports that nmap believes open and the service as
 
 ### Did we scan 65 535 ports in such a small amount of time?
 Well, no.  
-Nmap has a list of the top 1000 ports, and it scans those by default. But we have some options:
+Nmap has a list of the top 1000 ports, and it scans those by default. But we have options:
 
 | Description         | Flag          |
 | ------------------- | ------------- |
@@ -67,10 +67,20 @@ Nmap has a list of the top 1000 ports, and it scans those by default. But we hav
 | Scan custom ports   | -p\<number\>  |
 | Scan all 65 535     | -p-           |
 
-Don't be fooled by the wording here: top N ports does **not** mean ports 0-N, but the most commonly N ports usually open instead.
+Don't be fooled by the wording here: top N ports does **not** mean ports 0-N, but the most commonly open N ports instead.
 
 ### You should almost always scan all the ports
-Even though it's pretty time consuming. Non-standard ports are usually where custom, developing or debugging services run. For example, a developer might have forgotten about a server open on port 8080 exposing an internal directory, or it might have much less strict security policies. What you can do is run a standard nmap scan, and then run the full one in the background. You will learn about [optimizing your scans]() in chapter [**TODO**]()
+Even though it's pretty time consuming. Non-standard ports are usually where custom, developing or debugging services run. As an example, a developer might have forgotten about a server open on port 8080 exposing an internal directory, or it might have much less strict security policies. What you can do is run a standard nmap scan, and then run the full one in the background. You will learn about [optimizing your scans]() in chapter [**TODO**]()
 
 ### Getting more details
-reason and stuff
+We have the opportunity to display additional information about the scan. In fact, nmap lets us trim the verbosity of the tool through some flags. The ones I use the most are:
+
+| Description                                    | Flag               |
+| ---------------------------------------------- | ------------------ |
+| Verbose. Displays additional/debug information | `-v/vvvv`          |
+| Displays the reason it believes so             | `--reason`         |
+| Packet trace                                   | `--packet-trace`   |
+| Shows percentage of current scan               | `--stats-every=5s` |
+
+For a simple `SYN scan`, we're all set.   
+**Next**: [[4 - Service discovery]]
