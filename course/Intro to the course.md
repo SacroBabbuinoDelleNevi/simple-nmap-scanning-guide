@@ -1,5 +1,6 @@
 I'd like you to read the README file for a thorough intro to the course, but here's all you need to know in pills:
 - **This guide's intended purpose is for reference and legal and educational use only**
+- All of the commands used in the guide will be stored in a table for quick reference under the *reference_table* directory
 - What do I need to know before reading through the guide?
 	- At least a basic knowledge of the TCP/IP stack is **mandatory**
 	- A basic knowledge of Linux and Windows is strongly recommended
