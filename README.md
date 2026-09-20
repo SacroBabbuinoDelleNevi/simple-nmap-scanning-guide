@@ -5,7 +5,7 @@ Before applying any of the concepts explained, **please** make sure you're autho
 
 ### How to read this guide
 This is not official documentation nor The Bible. While community content is great, remember to always glance at the [documentation](https://nmap.org/book/man.html) for more in depth explanations and details. Knowing *how* to do something is *not*  knowing something
-A summary of all the flags and options used will be put in the *reference_table* repo.
+A summary of all the flags and options used is in the *reference_table* repo.
 ### Who wrote this guide?
 A student, likely as you are. Everything you find here is relative to my experience and approach, thought to help everyone who needs some *I wish I knew* tips.
 

@@ -1,0 +1,1 @@
+Nmap has a built in service identification based on probes it sends to those services. 
