@@ -1,6 +1,6 @@
 UDP's scanning principle is slightly different: since it is a stateless protocol, we can't send SYN packets to guess port status. What we do is send empty or protocol specific UDP packets and wait for a response.  
 
->[!Hey!]
+>[!Note]
 >Don't leave UDP scanning out! UDP ports **are** an attack surface, and you may discover vulnerable UDP services!
 
 | Response                           | State                    |
