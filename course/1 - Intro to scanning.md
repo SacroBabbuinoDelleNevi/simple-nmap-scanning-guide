@@ -9,4 +9,4 @@ A scan is a series of packets sent to a machine to get information about it. Tha
 You can even perform a scan manually, one host at a time, one port at a time, but obviously that's not efficient and can be automated through programming languages, resulting in the creation of tools such as `nmap`.
 Since those tools craft the packets for you, understanding which packets are sent and how should the target behave is crucial to correctly read the output of a scan given that in certain situations some results may cause confusion or false positives, and you should be able to tell each one apart.
 
-**Next**: [[2 - Get your targets]]
+**Next**: [2 - Get your targets](https://github.com/SacroBabbuinodelleNevi/simple-nmap-scanning-guide/blob/main/course/2%20-%20Get%20your%20targets.md)

@@ -70,7 +70,7 @@ Nmap has a list of the top 1000 ports, and it scans those by default. But we hav
 Don't be fooled by the wording here: top N ports does **not** mean ports 0-N, but the most commonly open N ports instead. To do that, you have to specify a range in the `-p` parameter, like this: `-p5-1200`. Because lower and upper limits can be omitted, `-p-` will scan ports from 1 to 65535.
 
 ### You should almost always scan all the ports
-Even though it's pretty time consuming. Non-standard ports are usually where custom, developing or debugging services run. As an example, a developer might have forgotten about a server open on port 8080 exposing an internal directory, or it might have much less strict security policies. What you can do is run a standard nmap scan, and then run the full one in the background. You will learn about [optimizing your scans]() in chapter [**TODO**]()
+Even though it's pretty time consuming. Non-standard ports are usually where custom, developing or debugging services run. As an example, a developer might have forgotten about a server open on port 8080 exposing an internal directory, or it might have much less strict security policies. What you can do is run a standard nmap scan, and then run the full one in the background. You will learn about optimizing your scans in chapter [5]([https://github.com/SacroBabbui](https://github.com/SacroBabbuinodelleNevi/simple-nmap-scanning-guide/blob/main/course/5%20-%20Optimization.md)  
 
 ### Getting more details
 We have the opportunity to display additional information about the scan. In fact, nmap lets us trim the verbosity of the tool through some flags. The ones I use the most are:
@@ -83,4 +83,4 @@ We have the opportunity to display additional information about the scan. In fac
 | Shows percentage of current scan               | `--stats-every=5s` |
 
 For a simple `SYN scan`, we're all set.
-**Next**: [[5 - Optimization]]
+**Next**: [4 - UDP port scanning](https://github.com/SacroBabbuinodelleNevi/simple-nmap-scanning-guide/blob/main/course/4%20-%20UDP%20port%20scanning.md)

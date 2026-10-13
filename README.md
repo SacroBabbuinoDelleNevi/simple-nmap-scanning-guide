@@ -1,5 +1,5 @@
 _My personal guide about scanning hosts with Nmap, made along my learning journey to help me too ;). Easy way to start scanning, useful reference for intermediates_
-
+#### As of now (october 2026), this guide is still under development
 ### This guide's intended purpose is for reference and legal and educational use only.
 Before applying any of the concepts explained, **please** make sure you're authorized by the **owner** of the machines (not the guy who runs the website but the one who owns the server, which are very likely **not** the same person) and legally compliant with the laws of your country.
 

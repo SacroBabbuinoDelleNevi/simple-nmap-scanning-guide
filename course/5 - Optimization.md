@@ -1,7 +1,7 @@
 Optimization is an important part of nmap scanning, if only because it could lead to more accurate information.  
 An nmap scan sends probes to a target or group of targets, and we can adjust:
 
-`--min/max-parallelism  
+`--min/max-parallelism`  
 **How many probes are simultaneously sent**
 Regulating this to high values is risky due to the possible loss of accuracy. Sending a lot of probes at the same time on a poorly performing network could result in packets being dropped for other reasons than the ones nmap interprets and expects. Besides, this rate is automatically adjusted based on performance: the number starts low but can hit hundreds of probes simultaneously. 
 

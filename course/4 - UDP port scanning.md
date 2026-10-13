@@ -10,4 +10,6 @@ UDP's scanning principle is slightly different: since it is a stateless protocol
 | ICMP port unreachable              | Port is `closed`         |
 | ICMP unreachables                  | Port is `filtered`       |
 
-The only thing really different from the output of a SYN scan is that `open|filtered` status you might see. That means the port is not sending anything back, which is either because the service only responds to its specific packets (and not empty ones, sent to the majority of ports) or a firewall drops our packets.
+The only thing really different from the output of a SYN scan is that `open|filtered` status you might see. That means the port is not sending anything back, which is either because the service only responds to its specific packets (and not empty ones, sent to the majority of ports) or a firewall drops our packets.  
+
+**Next**: [5 - Optimization](https://github.com/SacroBabbuinodelleNevi/simple-nmap-scanning-guide/blob/main/course/5%20-%20Optimization.md)

@@ -23,4 +23,4 @@ nmap -sn 192.168.1.0/24
 > [!Note]
 > Running nmap without sudo privileges is limiting: because it uses raw packet crafting, root privileges are mandatory to send crafted data and perform some elevated actions. The output can vary widely based on permissions given
 
-**Next**: [[3 - TCP port scanning]]
+**Next**: [3 - TCP port scanning](https://github.com/SacroBabbuinodelleNevi/simple-nmap-scanning-guide/blob/main/course/3%20-%20TCP%20port%20scanning.md)
